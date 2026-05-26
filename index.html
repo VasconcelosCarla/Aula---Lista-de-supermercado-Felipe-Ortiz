@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Supermercado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Lista de Supermercado</h1>
+    <div class="item">
+        <input 
+        type="text" 
+        name="item" 
+        id="item"
+        placeholder="Item"
+        >
+        <button class="btn" id="btn-item">Adicionar</button>
+    </div>
+    <div class="qnt">
+        <input 
+        type="number" 
+        name="qnt" 
+        id="qnt"
+        placeholder="Quantidade"
+        >
+        <button class="btn" onclick="adicionarQnt()">Adicionar</button>
+    </div>
+    <br>
+
+    <div id="lista"></div>
+
+    <div class="total-box">
+        <h2>
+            Total de gasto:
+            <span id="total">R$0,00</span>
+        </h2>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
